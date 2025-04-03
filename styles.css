@@ -6,7 +6,9 @@
   }
 
   html{
+    margin: auto;
   }
+
 
 body{
     background: rgba(34, 40, 49, 1);
@@ -16,87 +18,55 @@ body{
     opacity: 1.0;
 }
 
-.heading{
+.nav__container{
     position: fixed; /* Keeps the header in place */
     top: 0;
+    margin: 0;
     font-family: "poppins";
     width: 100%; 
     display: flex;
     height: 70px; /* Adjust as needed */
-    display: flex;
-    align-items: center;
-        justify-content: center;
     backdrop-filter: blur(10px); /* Adds the blur effect */
     background: transparent; /* Keeps the background colorless */
     z-index: 1000; /* Ensures it stays above other elements */
     border-bottom:  1px solid rgba(255, 255, 255, 0.2);
 }
 
-#welcome{
-    font-family: "poppins";
+.heading{
     font-family: "Oswald";
-    font-size: 35px;
-    font-weight: 700;
-    padding-left: 60px;
-    padding-top:10px;
-    line-height: 35.57px;
-    text-align: left;
-    color: var(--black);
-    justify-content: center;
+    margin-left: 40px;
+    margin-bottom: 10px;
 }
 
-.icons{
-    width: Hug (502px)px;
-    height: Hug (123px)px;
-    left: 30%;
-    padding: 20px;
-    gap: 20px;
-    opacity: 1.0;
-    text-transform: capitalize;
-}
-
-#navbar{
-    align-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+nav{
     margin: 0 0 0 auto;
-    padding-right: 10px;
-    width: Hug (502px)px;
-    height: Hug (123px)px;
-    margin-top: 0;
-    left: 938px;
-    padding: 48px 56px 48px 96px;
-    gap: 48px;
-    opacity: 1.0;
+}
+
+nav li{
+    display: inline-block; 
+    margin-right: 45px;
+    margin-top: 8px;
+    padding: 5px;
+ }
+ nav a{
+    font-family: 'poppins';
+    color: #eee;
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+
+ }
+
+nav ul{
+    list-style: none;
+    float: right;
+    margin-right:30px ;
 }
 
 nav a:hover{
     color: brown;
     transition: 0.5s;
-    -webkit-transition: 0.5s;
-    -moz-transition: 0.5s;
-    -ms-transition: 0.5s;
-    -o-transition: 0.5s;
-}
-
-nav ul{
-    list-style:none ;
-    float: right;
-}
-
-nav li{
-   display: inline-block; 
-}
-
-nav a{
-text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 400;
-    font-family: 'poppins';
-    color: #eee;
-    letter-spacing: 0.08rem;
 }
 
 .welcome-text{
@@ -107,8 +77,8 @@ text-decoration: none;
 
 #vector{
     position: absolute;
-    top:35%;
-    left: 4%;
+    top:42%;
+    left: 6%;
     align-items: left;
     align-content: left;
 }
@@ -122,7 +92,7 @@ text-decoration: none;
 #vector_3{
     position: absolute;
     left: 600px;
-    top: 790px;
+    top: 820px;
 }
 
 span{
@@ -133,15 +103,17 @@ span{
     display: block;
 }
 
-#creative_design{
+.creative_design{
     font-family: "poppins";
-    font-size: 96px;
+    width:100%;
+    font-size: 90px;
     font-weight: 700;
     line-height: 96px;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     margin-left: 50px;
+    margin-right: 350px;
     margin-bottom: 30px;
 }
 
@@ -149,7 +121,6 @@ button{
     background: #393E46BF;
     color: var(--black);
     margin-left: 40px;
-    width: Hug (88px)px;
     outline: none;
     border: none;
     font-family: "poppins";
@@ -158,10 +129,6 @@ button{
     gap: 10px;
     border-radius: 24px 24px 24px 24px;
     opacity: 1.0;
-    -webkit-border-radius: 24px 24px 24px 24px;
-    -moz-border-radius: 24px 24px 24px 24px;
-    -ms-border-radius: 24px 24px 24px 24px;
-    -o-border-radius: 24px 24px 24px 24px;
 }
 
 #creative{
@@ -174,6 +141,7 @@ border: none;
 .img_container{
     align-content: right;
     margin: 0 0 0 auto;
+    margin-left: 460px;
     padding: 70px 70px 20px 20px;
     position: relative;
 }
@@ -194,21 +162,13 @@ border: none;
 
 .arrow-down{
     padding: 20px 30px 20px 25px;
-    margin: 20px 0 0 550px;
+    margin: 100px 0 0 700px;
     background-color: #393E46BF;
     width: 10px;
     outline: none;
     border: none;
     border-radius: 1px;
-    -webkit-border-radius: 1px;
-    -moz-border-radius: 1px;
-    -ms-border-radius: 1px;
-    -o-border-radius: 1px;
     transition: 1s;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
 }
 
 .arrow-down:hover, button:hover{
@@ -219,6 +179,7 @@ border: none;
     padding: 2%;
     line-height: 30px;
     margin-top: 10%;
+    margin-bottom: 20px;
     margin: 30px;
     font-family: "Poppins";
 }
@@ -238,6 +199,7 @@ border: none;
     display: flex;
     margin-bottom: 120px;
     font-family: "Poppins";
+    width: 100%;
 }
 
 .about h2{
@@ -247,20 +209,31 @@ border: none;
 
 #texted{
     display: block;
-    text-align: justify;
-    width: 40%;
     margin-top: 5px;
+    width: 100%;
+    text-align: justify;
     font-family: "poppins";
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
-    text-decoration-skip-ink: none;
 }
+
+.texted h2{
+    width: 100%;
+    margin-right: 500px;
+}
+
+.about_container{
+    margin: 0 0 0 auto;
+    margin-left: 860px;
+    width: 50%;
+    position: relative;
+}
+
 
 #vector_1{
     position: absolute;
     left: 350px;
-    top: 1230px;
+    top: 1280px;
 }
 
 #read_me{
@@ -272,14 +245,6 @@ border: none;
 
 #read_me:hover{
     color: brown;
-}
-.img_container{
-
-}
-
-.about_container{
-    margin: 0 0 0 auto;
-    position: relative;
 }
 
 #back{
@@ -315,17 +280,26 @@ border: none;
     color: brown;
 }
 
+.bg__img{
+        background-image: url(/ASSETS/Images/doodle\ items\ \(2\).png);
+        ackground-repeat: no-repeat;
+        background-position:center;
+        width: 1440px;
+        background-size: cover;
+    }
+
 .recent_works{
     margin-bottom: 200px;
-    background-image: url(/ASSETS/Images/doodle\ items\ \(2\).png);
+    margin-top: 20px;
     padding: 50px 30px;
     font-family: "poppins";
     opacity: 1.0;
 }
 
 .recent_works h1{
-    padding: 5px 20px;
+    padding: 60px 20px 20px 10px;
     margin-left: 50px;
+    margin-top: 50px;
     font-size: 64px;
     margin-bottom:5px;
     font-family: "poppins";
@@ -337,6 +311,8 @@ border: none;
 
 .recent_container{
     margin-top: 2px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .recent{
@@ -346,18 +322,12 @@ border: none;
 
 .recent button{
     margin-left: 30px;
-    width: Hug (88px)px;
-    height: Hug (47px)px;
     padding: 10px 32px 10px 32px;
     gap: 10px;
     font-family: "poppins";
     margin-bottom: 5px;
     border-radius: 24px 24px 24px 24px;
     opacity: 1.0;
-    -webkit-border-radius: 24px 24px 24px 24px;
-    -moz-border-radius: 24px 24px 24px 24px;
-    -ms-border-radius: 24px 24px 24px 24px;
-    -o-border-radius: 24px 24px 24px 24px;
 }
 
 #recent:active{
@@ -369,14 +339,11 @@ border: none;
     width: 350px;
     height: 350px;
     transition: 0,2s;
-    -webkit-transition: 2s;
-    -moz-transition: 2s;
-    -ms-transition: 2s;
-    -o-transition: 2s;
-    width: Hug (1,200px)px;
-    height: Hug (280px)px;
+    margin-right: 50px;
     gap: 48px;
     opacity: 0px;
+    transition: 2s;
+    
 }
 
 #rec:hover{
@@ -395,6 +362,7 @@ border: none;
 .project_container{
     display: flex;
     margin:15px 30px 100px 15px;
+    width: 100%;
 }
 
 .project{
@@ -410,8 +378,8 @@ border: none;
     text-decoration-skip-ink: none;
     margin-top: 0;
     margin-bottom: 2px;
-    width: 70%;
-    margin:4px 0 45px 100px;
+    width: 100%;
+    margin:4px 300px 45px 100px;
 }
 
 .project img{
@@ -428,7 +396,8 @@ form{
     margin: 0 0 0 auto;
     margin-top: 20px;
     margin-right: 40px;
-    width: 50%;
+    margin-left: 360px;
+    width: 100%;
     font-family: "poppins";
 }
 
@@ -441,13 +410,10 @@ input{
     background-color: #363738;
     padding: 10px 120px 10px 13px;
     border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    margin-right: 80px;
     font-family: "poppins";
     gap: 10px;
-    width: 60%;
+    width: 40%;
     border-radius: 16px 16px 16px 16px;
     opacity: 0px;
     outline: none;
@@ -530,7 +496,10 @@ textarea{
 }
 
 .foot_i{
-    margin-left: 510px;
+    margin-left: 460px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 i{
@@ -565,10 +534,6 @@ footer i{
     background: #393E46;
     margin-left: 30px;
     border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 #foot i:hover{
@@ -588,7 +553,8 @@ footer i{
 }
 
 footer{
-
+    align-items: center;
+    justify-content: center;
 }
 
 footer ol{
@@ -607,4 +573,24 @@ footer ul{
 
 footer a:hover{
     color: brown;
+}
+
+#policy{
+    margin-right: 130px;
+    margin-top: 5px;
+    position: absolute;
+    right: 0;
+    bottom: 3;
+    width: 100%;
+}
+
+/*============MEDIA QUERIES (MEDIUM DEVICES)========*/
+@media screen and (max-width: 1024px){
+
+
+}
+
+/*============MEDIA QUERIES (SMALL DEVICES)========*/
+@media screen and (max-width: 600px){
+    
 }

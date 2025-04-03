@@ -1,0 +1,37 @@
+
+#welcome{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 35.57px;
+    text-align: left;
+    color: var(--black);
+    justify-content: center;
+}
+
+.icons{
+    padding-right: 20px;
+    gap: 20px;
+    opacity: 1.0;
+    text-transform: capitalize;
+}
+
+.navbar{
+    align-content: center;
+}
+
+
+
+nav ul{
+    list-style:none ;
+    float: right;
+}
+
+
+
+nav a{
+text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #eee;
+    letter-spacing: 0.08rem;
+}

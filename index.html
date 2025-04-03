@@ -16,20 +16,19 @@
 </head>
 
 <body>
-    <header>
-        <div class="container">
-          <div class="heading">
-            <h1 id="welcome">PsalmDesign</h1>
-            <nav id="navbar">
+    <header class="nav__container">
+          <div class="welcome">
+            <h1  class="heading">PsalmDesign</h1>
+          </div>
+
+            <nav>
               <ul>
-                  <li><a href="" class="icons">Home</a></li>
-                  <li><a href="" class="icons"> About me</a></li>
-                  <li><a href="" class="icons">contact</i></a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about"> About me</a></li>
+                <li><a href="#contact">contact</a></li>
               </ul>
             </nav>
-          </div>
-        </div>
-    </header>
+          </header>
 
 <main>
     <div class="container">
@@ -37,7 +36,7 @@
                 <div class="welcome">
                   <img src="/ASSETS/Images/Vector 187.png" id="vector" alt="" height="220px" width="50px">
                   <img src="/ASSETS/Images/lightbulb.png" id="vector_3" alt="" height="80px" width="70px">
-                    <h1 id="creative_design">CREATIVE UI <span id="design">DESIGNER</span> </h1>
+                    <h1 class="creative_design">CREATIVE UI <span id="design">DESIGNER</span> </h1>
                     <button>Hire Me  <i class="fa-solid fa-truck-front"></i></button>
                     <a href="/ASSETS/files/Profile.pdf" target="_blank"><button onclick="downloadFile()" id="creative">Download CV  <i class="fa-solid fa-download"></i></button></a> 
                   </div>
@@ -50,7 +49,7 @@
 
               <a href="#s1"><button class="arrow-down"> &#8595;</button></a>
 
-              <section class="about">
+              <section class="about" id="about">
                   <h1>About <span>me</span></h1>
                    <div class="about_me">
                     <div class="texted">
@@ -76,24 +75,26 @@
             </section>
 
               <section class="recent_works">
-                  <h1>My recent <span>works</span></h1>
-                  <div class="recent">
-                  <button id="recent">All</button>
-                  <button id="recent">UI</button>
-                 <button id="recent">UX</button>
-                 <button id="recent">Web Design</button>
+                <div class="bg__img">
+                    <h1>My recent <span>works</span></h1>
+                    <div class="recent">
+                      <button id="recent">All</button>
+                      <button id="recent">UI</button>
+                      <button id="recent">UX</button>
+                      <button id="recent">Web Design</button>
+                    </div>
+                        <div class="recent_container">
+                          <img src="/ASSETS/Images/Frame 10.png" alt="" id="rec">
+                          <img src="/ASSETS/Images/Frame 11.png" alt="" id="rec">
+                          <img src="/ASSETS/Images/Frame 10 (1).png" alt="" id="rec">
+                        </div>
                 </div>
-                      <div class="recent_container">
-                         <img src="/ASSETS/Images/Frame 10.png" alt="" id="rec">
-                         <img src="/ASSETS/Images/Frame 11.png" alt="" id="rec">
-                         <img src="/ASSETS/Images/Frame 10 (1).png" alt="" id="rec">
-                      </div>
                       <img src="/ASSETS/Images/keyboard.png" id="vector_4" height="100px" width="200px">
               </section>
           
-          <section class="project_container">
+          <section class="project_container" id="contact">
             <div class="project">
-              <h1>Got a project in <span id="mind">mind?</span></h1>
+              <h1>Got a project in <br><span id="mind">mind?</span></h1>
               <img src="/ASSETS/Images/Group 2372.png" alt="">
             </div>
             <img src="/ASSETS/Images/Vector 186 (1).png" id="vector_5" height="170px" width="120px">
@@ -139,7 +140,7 @@
        
         <section id="policy">
           <ul>
-            <ol><a href="">Term of service-</a><a href="">Privacy Policy</a></ol>
+            <ol><a href="" class="footie">Term of service-</a><a href="">Privacy Policy</a></ol>
           </ul>
         </section>
             </footer>
